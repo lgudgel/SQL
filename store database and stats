@@ -1,0 +1,25 @@
+CREATE TABLE store (id INTEGER PRIMARY KEY, category TEXT, season TEXT, color TEXT, quantity INTEGER, price INTEGER); 
+INSERT INTO store VALUES (1, "tshirt", "summer", "red", 4, 10);
+INSERT INTO store VALUES (2, "long sleeve shirt", "winter", "blue", 6, 15);
+INSERT INTO store VALUES (3, "pants", "winter", "blue", 10, 20);
+INSERT INTO store VALUES (4, "pants", "winter", "black", 10, 20);
+INSERT INTO store VALUES (5, "shorts", "summer", "blue", 10, 15);
+INSERT INTO store VALUES (6, "shorts", "summer", "khaki", 10, 15);
+INSERT INTO store VALUES (7, "maxi dress", "spring", "pink", 7, 30);
+INSERT INTO store VALUES (8, "maxi dress", "spring", "green", 11, 23);
+INSERT INTO store VALUES (9, "midi dress", "spring", "pink", 9, 25);
+INSERT INTO store VALUES (10, "midi dress", "spring", "blue", 11, 25);
+INSERT INTO store VALUES (11, "mini dress", "summer", "white", 9,20);
+INSERT INTO store VALUES (12, "Mini dress", "summer", "purple", 20, 20);
+INSERT INTO store VALUES (13, "mini dress", "summer", "black", 20, 20);
+INSERT INTO store VALUES (14, "skirt", "fall", "black", 20, 15);
+INSERT INTO store VALUES (15, "skirt", "fall", "blue", 20, 15);
+SELECT * FROM store;
+SELECT * FROM store ORDER BY price;
+SELECT sum(quantity) FROM store;
+SELECT sum(price) from store GROUP BY season;
+
+
+
+
+
